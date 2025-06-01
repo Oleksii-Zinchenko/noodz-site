@@ -94,7 +94,7 @@ body {
 .hero-section {
   background-color: #16774a;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero-container {
@@ -183,4 +183,66 @@ body {
   transform: translateX(-50%) rotate(2.74deg);
   width: 1100px;
   z-index: 1;
+}
+
+/* ------ Eerlijke producten ----- */
+
+.products-section {
+  background-color: #f6a0a9;
+  position: relative;
+  padding-top: 140px;
+  padding-bottom: 160px;
+  overflow: hidden;
+}
+
+.products-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+}
+
+.products-media {
+  position: relative;
+  max-width: 846px;
+  margin: 0 auto 60px;
+}
+
+.products-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50% / 40%;
+}
+.products-media .gum {
+  position: absolute;
+}
+
+.products-media .gum-left {
+  width: 128px;
+  top: 0;
+  left: -20px;
+}
+
+.products-media .gum-right {
+  width: 128px;
+  top: 0;
+  right: -20px;
+  z-index: 21;
+}
+.products-media .gum-bottom {
+  width: 128px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.products-media .star {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url('../img/products/star.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
 }

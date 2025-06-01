@@ -402,3 +402,58 @@
 
 // console.log(client_1.login);
 // console.log(client_1.email);
+
+//---------------------------------------------------------//
+
+// class Phone {
+//   static MAX_PRICE = 40000;
+//   #price;
+//   constructor(price) {
+//     this.#price = price;
+//   }
+
+//   get price() {
+//     return this.#price;
+//   }
+
+//   set price(newPrice) {
+//     if (newPrice <= Phone.MAX_PRICE) {
+//       this.#price = newPrice;
+//     }
+//   }
+// }
+
+// const newPhonePrice = new Phone(45000);
+
+// console.log(newPhonePrice.price);
+// newPhonePrice.price = 1000;
+// console.log(newPhonePrice.price);
+
+//----------------------------------------------------//
+
+// class BankAccount {
+//   constructor(accountNumber, balance) {
+//     this.accountNumber = accountNumber;
+//     this.balance = balance;
+//   }
+//   withdraw(amount) {
+//     if (this.balance >= amount) {
+//       this.balance -= amount;
+//       console.log(`Знято ${amount} грн. Залишок на рахунку: ${this.balance} грн.`);
+//     } else {
+//       console.log(`Недостатньо коштів на рахунку.`);
+//     }
+//   }
+//   deposit(refill) {
+//     this.balance += refill;
+//     console.log(`Поповнено ${refill} грн. Залишок на рахунку: ${this.balance} грн.`);
+//   }
+//   checkBalance() {
+//     console.log(`Залишок на рахунку: ${this.balance} грн.`);
+//   }
+// }
+// const bankAccount1 = new BankAccount('1', 2000);
+// bankAccount1.withdraw(500);
+// bankAccount1.withdraw(2100);
+// bankAccount1.deposit(500);
+// bankAccount1.checkBalance();
